@@ -1,0 +1,11 @@
+<?php
+/** @var \Shipping\DeliveryCost\Block\ShippingCost $block */
+$cost = $block->getShippingCost();
+$currencySymbol = $block->getCurrentCurrencySymbol();
+?>
+
+<?php if ($cost !== null): ?>
+    <div class="shipping-cost" style="margin-top:10px;">
+        <strong>Shipping cost by courier:</strong> <?= $cost ?> <?= $currencySymbol ?>
+</div>
+<?php endif; ?>
