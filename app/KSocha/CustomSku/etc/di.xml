@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="customsku_log_listing_data_source" xsi:type="string">KSocha\CustomSku\Model\ResourceModel\CustomSkuLog\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    
+    <type name="KSocha\CustomSku\Model\ResourceModel\CustomSkuLog\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">ksocha_customsku_log</argument>
+            <argument name="eventPrefix" xsi:type="string">ks_customsku_log</argument>
+            <argument name="eventObject" xsi:type="string">ks_customsku_collection</argument>
+            <argument name="resourceModel" xsi:type="string">KSocha\CustomSku\Model\ResourceModel\CustomSkuLog</argument>
+        </arguments>
+    </type>
+   
+</config>

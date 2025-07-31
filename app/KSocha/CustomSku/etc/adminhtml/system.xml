@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="customsku" translate="label" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Custom SKU</label>
+            <tab>general</tab>
+            <resource>KSocha_CustomSku::log</resource>
+            <group id="log_settings" translate="label" type="text" sortOrder="10" showInDefault="1">
+                <label>Log Cleanup Settings</label>
+                <field id="log_lifetime_days" translate="label" type="text" sortOrder="10" showInDefault="1">
+                    <label>Log Lifetime (in days)</label>
+                    <validate>validate-digits</validate>
+                    <frontend_class>validate-greater-than-zero</frontend_class>
+                    <comment>Logs older than this number of days will be deleted automatically.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+

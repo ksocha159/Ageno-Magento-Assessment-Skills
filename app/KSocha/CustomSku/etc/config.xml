@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/config.xsd">
+    <default>
+        <customsku>
+            <log_settings>
+                <log_lifetime_days>2</log_lifetime_days>
+            </log_settings>
+        </customsku>
+    </default>
+</config>
+

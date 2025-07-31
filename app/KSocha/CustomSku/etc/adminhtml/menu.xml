@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Menu/etc/menu.xsd">
+    <menu>
+        <add id="KSocha_CustomSku::log"
+             title="Custom SKU Log"
+             module="KSocha_CustomSku"
+             sortOrder="100"
+             parent="Magento_Catalog::catalog"
+             action="customsku_log/log/index" 
+             resource="KSocha_CustomSku::log"/>
+    </menu>
+</config>
+
