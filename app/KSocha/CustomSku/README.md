@@ -15,4 +15,4 @@ Tabela ma możliwość sortowania, filtrowania, paginacji
 
 
 
-![Konfiguracja parametru określającego liczbe dni po którym logi zostaną usunięte](screenshots/logs_log_lifetime.jpg)
+![Konfiguracja parametru określającego liczbe dni po którym logi zostaną usunięte](screenshots/log_lifetime.jpg)
